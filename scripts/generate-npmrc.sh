@@ -1,5 +1,3 @@
-source .env
-
 if [ -z $GITHUB_PKG_TOKEN ]; then
   echo "GITHUB_PKG_TOKENの環境変数がありません"
   exit -1
