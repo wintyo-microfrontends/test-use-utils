@@ -13,6 +13,11 @@ jobs:
         with:
           node-version: '18.12.1'
 
+      - name: Setup npmrc
+        run: ./setup.sh
+        env:
+          GITHUB_PKG_TOKEN: ${{ secrets.NPM_GITHUB_PKG_TOKEN }}
+
       - name: Install
         run: yarn install
 
